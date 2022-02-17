@@ -35,9 +35,9 @@ export default function MemoListScreen(props) {
             bodyText: data.bodyText,
             updatedAt: data.updatedAt.toDate(),
           });
-          setMemos(userMemos);
-          setLoading(false);
         });
+        setLoading(false);
+        setMemos(userMemos);
       }, (error) => {
         console.log(error);
         setLoading(false);
